@@ -1,0 +1,2 @@
+delete api all remaining
+get api of mapping supervisor and mapping collection boy remaining
