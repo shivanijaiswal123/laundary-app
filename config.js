@@ -5,21 +5,19 @@ const DBConfig = {
   local: {
     port: 3306,
     con: mysql.createConnection({
-      host: "localhost",
+      host: "127.0.0.1",
       user: "root",
       password: "root",
       database: "laundry",
-      socketPath: "/var/run/mysqld/mysqld.sock",
     }),
   },
   dev: {
     port: 3306,
     con: mysql.createConnection({
-      host: "localhost",
+      host: "127.0.0.1",
       user: "root",
       password: "root",
       database: "laundry",
-      socketPath: "/var/run/mysqld/mysqld.sock",
     }),
   },
 };
