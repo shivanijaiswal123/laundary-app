@@ -10,10 +10,11 @@ const mysql = require("mysql");
 // });
 
 var db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "laundry",
+  host: "us-cdbr-east-02.cleardb.com",
+  port: "3306",
+  user: "b55e4af43a550b",
+  password: "ece628bd",
+  database: "heroku_8d896fe10b8bfd4",
   multipleStatements: true,
 });
 
