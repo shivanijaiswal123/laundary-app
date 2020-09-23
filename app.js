@@ -4,7 +4,7 @@ var favicon = require("serve-favicon");
 var logger = require("morgan");
 var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
-const config = require('./config');
+const config = require("./config");
 var cors = require("cors");
 
 var users = require("./routes/users");
@@ -28,17 +28,17 @@ app.use("/users", users);
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("Hello to api");
+  res.send("Hello to api");
 });
 
 var api = require("./routes/api");
 app.use("/api", api);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    var err = new Error("Not Found");
-    err.status = 404;
-    next(err);
+app.use(function (req, res, next) {
+  var err = new Error("Not Found");
+  err.status = 404;
+  next(err);
 });
 
 // error handler
@@ -52,7 +52,8 @@ app.use(function(req, res, next) {
 //     res.render("error");
 // });
 
-app.listen(config.port, () => {
-    console.log("Server is running @", config.port)
-})
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
 module.exports = app;
