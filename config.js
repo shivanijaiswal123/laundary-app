@@ -9,6 +9,7 @@ const DBConfig = {
       user: "root",
       password: "root",
       database: "laundry",
+      socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
     }),
   },
   dev: {
@@ -18,6 +19,7 @@ const DBConfig = {
       user: "root",
       password: "root",
       database: "laundry",
+      socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
     }),
   },
 };
