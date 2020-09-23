@@ -31,6 +31,10 @@ app.get("/", (req, res) => {
   res.send("Hello to api");
 });
 
+app.get("/user", (req, res) => {
+  res.send("Hello shivani");
+});
+
 var api = require("./routes/api");
 app.use("/api", api);
 
