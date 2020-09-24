@@ -5,21 +5,21 @@ const DBConfig = {
   local: {
     port: 11220,
     con: mysql.createConnection({
-      host: "us-cdbr-east-02.cleardb.com",
+      host: "127.0.0.1",
       port: "3306",
-      user: "b55e4af43a550b",
-      password: "ece628bd",
-      database: "heroku_8d896fe10b8bfd4",
+      user: "root",
+      password: "root",
+      database: "laundry",
     }),
   },
   dev: {
     port: 11221,
     con: mysql.createConnection({
-      host: "us-cdbr-east-02.cleardb.com",
+      host: "127.0.0.1",
       port: "3306",
-      user: "b55e4af43a550b",
-      password: "ece628bd",
-      database: "heroku_8d896fe10b8bfd4",
+      user: "root",
+      password: "root",
+      database: "laundry",
     }),
   },
 };
